@@ -8,13 +8,18 @@ FRIDA-DEXDump -> dex2jar_batch -> jadx
 
 1. 安装进度条所需要的库
 
-> pip install rich
+```bash
+pip install rich
+```
 
 2. 使用FRIDA-DEXDump输出dex到target_dir目录
 
 3. 调用dex2jar_batch.py多进程批量把dex转jar，并且压缩为d2j-output.zip
 
-> python dex2jar_batch.py target_dir
+```bash
+python dex2jar_batch.py target_dir
+```
+
 
 4. jadx打开d2j-output.zip开始逆向吧！
 
